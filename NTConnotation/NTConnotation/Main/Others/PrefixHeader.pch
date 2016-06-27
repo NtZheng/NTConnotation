@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  NTConnotation
+//
+//  Created by 郑祯 on 16/6/28.
+//  Copyright © 2016年 nineteen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define NTColor(R,G,B) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */

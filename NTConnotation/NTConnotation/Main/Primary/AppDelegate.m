@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NTTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[NTTabBarViewController alloc]init];
     [self.window makeKeyAndVisible];
     return YES;
 }
