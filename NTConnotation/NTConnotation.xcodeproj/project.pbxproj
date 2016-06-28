@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6A25D0361D21A51E00BACA9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25D02F1D21A51E00BACA9D /* main.m */; };
-		6A25D0371D21A51E00BACA9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25D0331D21A51E00BACA9D /* AppDelegate.m */; };
 		6A25D0381D21A51E00BACA9D /* NTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25D0351D21A51E00BACA9D /* NTTabBarViewController.m */; };
 		6A8E92C71D1C5F8200C502B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E92C61D1C5F8200C502B1 /* Assets.xcassets */; };
 		6A8E92D51D1C5F8200C502B1 /* NTConnotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92D41D1C5F8200C502B1 /* NTConnotationTests.m */; };
 		6A8E92E01D1C5F8200C502B1 /* NTConnotationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */; };
+		6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */; };
+		6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */; };
+		6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7E1D22EC5E008045C0 /* AppDelegate.m */; };
+		6AFE0D821D22ECB8008045C0 /* NTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D811D22ECB8008045C0 /* NTTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,6 @@
 /* Begin PBXFileReference section */
 		6A25D02F1D21A51E00BACA9D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A25D0301D21A51E00BACA9D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		6A25D0321D21A51E00BACA9D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6A25D0331D21A51E00BACA9D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6A25D0341D21A51E00BACA9D /* NTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTabBarViewController.h; sourceTree = "<group>"; };
 		6A25D0351D21A51E00BACA9D /* NTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTabBarViewController.m; sourceTree = "<group>"; };
 		6A8E92B71D1C5F8200C502B1 /* NTConnotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTConnotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +49,14 @@
 		6A8E92DB1D1C5F8200C502B1 /* NTConnotationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTConnotationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTConnotationUITests.m; sourceTree = "<group>"; };
 		6A8E92E11D1C5F8200C502B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFE0D771D22EBDD008045C0 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		6AFE0D791D22EBDD008045C0 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		6AFE0D7D1D22EC5E008045C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AFE0D7E1D22EC5E008045C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AFE0D801D22ECB8008045C0 /* NTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTabBar.h; sourceTree = "<group>"; };
+		6AFE0D811D22ECB8008045C0 /* NTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,8 @@
 		6A25D02E1D21A51E00BACA9D /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				6AFE0D7D1D22EC5E008045C0 /* AppDelegate.h */,
+				6AFE0D7E1D22EC5E008045C0 /* AppDelegate.m */,
 				6A25D02F1D21A51E00BACA9D /* main.m */,
 				6A25D0301D21A51E00BACA9D /* PrefixHeader.pch */,
 			);
@@ -87,10 +98,10 @@
 		6A25D0311D21A51E00BACA9D /* Primary */ = {
 			isa = PBXGroup;
 			children = (
-				6A25D0321D21A51E00BACA9D /* AppDelegate.h */,
-				6A25D0331D21A51E00BACA9D /* AppDelegate.m */,
 				6A25D0341D21A51E00BACA9D /* NTTabBarViewController.h */,
 				6A25D0351D21A51E00BACA9D /* NTTabBarViewController.m */,
+				6AFE0D801D22ECB8008045C0 /* NTTabBar.h */,
+				6AFE0D811D22ECB8008045C0 /* NTTabBar.m */,
 			);
 			path = Primary;
 			sourceTree = "<group>";
@@ -188,8 +199,20 @@
 			children = (
 				6A25D0311D21A51E00BACA9D /* Primary */,
 				6A25D02E1D21A51E00BACA9D /* Others */,
+				6AFE0D761D22EBDD008045C0 /* Category */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		6AFE0D761D22EBDD008045C0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6AFE0D771D22EBDD008045C0 /* UIButton+Extension.h */,
+				6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */,
+				6AFE0D791D22EBDD008045C0 /* UIView+Extension.h */,
+				6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,7 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A25D0371D21A51E00BACA9D /* AppDelegate.m in Sources */,
+				6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */,
+				6AFE0D821D22ECB8008045C0 /* NTTabBar.m in Sources */,
+				6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */,
+				6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */,
 				6A25D0381D21A51E00BACA9D /* NTTabBarViewController.m in Sources */,
 				6A25D0361D21A51E00BACA9D /* main.m in Sources */,
 			);

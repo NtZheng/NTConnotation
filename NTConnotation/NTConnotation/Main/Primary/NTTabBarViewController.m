@@ -7,6 +7,7 @@
 //
 
 #import "NTTabBarViewController.h"
+#import "NTTabBar.h"
 
 @interface NTTabBarViewController ()
 
@@ -39,12 +40,26 @@
     [self appendChildViewController:viewController3 title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     UIViewController *viewController4 = [[UIViewController alloc]init];
     [self appendChildViewController:viewController4 title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    
+    
+    NTTabBar *tabBar = [[NTTabBar alloc]init];
+    // 这里由于block内部没有引用self（本视图控制器），那么就不会出现循环引用问题
+    tabBar.middleButtonAction = ^{
+        NSLog(@"model a view");
+    };
+    // 更改TabBar为自定义的NTTabBar
+    [self setValue:tabBar forKey:@"tabBar"];// 利用KVC机制来赋值系统设定的只读属性
+    
 }
 
 - (void)appendChildViewController :(UIViewController *)viewController title :(NSString *)title image: (NSString *)image selectedImage :(NSString *)selectedImage {
     viewController.tabBarItem.title = title;
-    viewController.tabBarItem.image = [UIImage imageNamed:image];
-    viewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];// 改变选中状态下图片的渲染模式（不需要系统进行多余的渲染）
+    if (image.length) {
+        viewController.tabBarItem.image = [UIImage imageNamed:image];
+    }
+    if (selectedImage.length) {
+        viewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];// 改变选中状态下图片的渲染模式（不需要系统进行多余的渲染）
+    }
     [self addChildViewController:viewController];
     
 }
