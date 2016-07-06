@@ -8,6 +8,12 @@
 
 #import "NTTabBarViewController.h"
 #import "NTTabBar.h"
+#import "NTNavigationController.h"
+// 四个子控制器
+#import "NTEssenceTableViewController.h"
+#import "NTLatestTableViewController.h"
+#import "NTAttentionTableViewController.h"
+#import "NTInformationTableViewController.h"
 
 @interface NTTabBarViewController ()
 
@@ -32,14 +38,14 @@
     [item setTitleTextAttributes:selectedAttributes forState:UIControlStateSelected];
     
     // 添加各个模板的视图控制器
-    UIViewController *viewController1 = [[UIViewController alloc]init];
-    [self appendChildViewController:viewController1 title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
-    UIViewController *viewController2 = [[UIViewController alloc]init];
-    [self appendChildViewController:viewController2 title:@"最新" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
-    UIViewController *viewController3 = [[UIViewController alloc]init];
-    [self appendChildViewController:viewController3 title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
-    UIViewController *viewController4 = [[UIViewController alloc]init];
-    [self appendChildViewController:viewController4 title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    NTEssenceTableViewController *essenceTableViewController = [[NTEssenceTableViewController alloc]init];
+    [self appendChildViewController:essenceTableViewController title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    NTLatestTableViewController *latestTableViewController = [[NTLatestTableViewController alloc]init];
+    [self appendChildViewController:latestTableViewController title:@"最新" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    NTAttentionTableViewController *attentionTableViewController = [[NTAttentionTableViewController alloc]init];
+    [self appendChildViewController:attentionTableViewController title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    NTInformationTableViewController *informationTableViewController = [[NTInformationTableViewController alloc]init];
+    [self appendChildViewController:informationTableViewController title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     
     
     NTTabBar *tabBar = [[NTTabBar alloc]init];
@@ -53,6 +59,7 @@
 }
 
 - (void)appendChildViewController :(UIViewController *)viewController title :(NSString *)title image: (NSString *)image selectedImage :(NSString *)selectedImage {
+    
     viewController.tabBarItem.title = title;
     if (image.length) {
         viewController.tabBarItem.image = [UIImage imageNamed:image];
@@ -60,7 +67,8 @@
     if (selectedImage.length) {
         viewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];// 改变选中状态下图片的渲染模式（不需要系统进行多余的渲染）
     }
-    [self addChildViewController:viewController];
+    NTNavigationController *navigationController = [[NTNavigationController alloc]initWithRootViewController:viewController];// 对控制器进行统一的封装，采用统一的导航控制器
+    [self addChildViewController:navigationController];
     
 }
 
