@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		6A25D0361D21A51E00BACA9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25D02F1D21A51E00BACA9D /* main.m */; };
 		6A25D0381D21A51E00BACA9D /* NTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25D0351D21A51E00BACA9D /* NTTabBarViewController.m */; };
+		6A3B51711D2D682A0099A284 /* NTAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B516F1D2D682A0099A284 /* NTAttentionViewController.m */; };
+		6A3B51791D2D68D80099A284 /* NTAttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B51781D2D68D80099A284 /* NTAttentionViewController.xib */; };
 		6A45FE6E1D2CEEDC0005B813 /* NTEssenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE6D1D2CEEDC0005B813 /* NTEssenceTableViewController.m */; };
 		6A45FE711D2CEEF80005B813 /* NTLatestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE701D2CEEF80005B813 /* NTLatestTableViewController.m */; };
-		6A45FE741D2CEF0A0005B813 /* NTAttentionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE731D2CEF0A0005B813 /* NTAttentionTableViewController.m */; };
 		6A45FE771D2CEF1A0005B813 /* NTInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE761D2CEF1A0005B813 /* NTInformationTableViewController.m */; };
 		6A45FE7A1D2CF02E0005B813 /* NTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE791D2CF02E0005B813 /* NTNavigationController.m */; };
 		6A45FE801D2CF5610005B813 /* NTTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE7F1D2CF5610005B813 /* NTTestViewController.m */; };
@@ -47,12 +48,13 @@
 		6A25D0301D21A51E00BACA9D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6A25D0341D21A51E00BACA9D /* NTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTabBarViewController.h; sourceTree = "<group>"; };
 		6A25D0351D21A51E00BACA9D /* NTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTabBarViewController.m; sourceTree = "<group>"; };
+		6A3B516E1D2D682A0099A284 /* NTAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAttentionViewController.h; sourceTree = "<group>"; };
+		6A3B516F1D2D682A0099A284 /* NTAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAttentionViewController.m; sourceTree = "<group>"; };
+		6A3B51781D2D68D80099A284 /* NTAttentionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTAttentionViewController.xib; sourceTree = "<group>"; };
 		6A45FE6C1D2CEEDC0005B813 /* NTEssenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTEssenceTableViewController.h; sourceTree = "<group>"; };
 		6A45FE6D1D2CEEDC0005B813 /* NTEssenceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTEssenceTableViewController.m; sourceTree = "<group>"; };
 		6A45FE6F1D2CEEF80005B813 /* NTLatestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLatestTableViewController.h; sourceTree = "<group>"; };
 		6A45FE701D2CEEF80005B813 /* NTLatestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLatestTableViewController.m; sourceTree = "<group>"; };
-		6A45FE721D2CEF0A0005B813 /* NTAttentionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAttentionTableViewController.h; sourceTree = "<group>"; };
-		6A45FE731D2CEF0A0005B813 /* NTAttentionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAttentionTableViewController.m; sourceTree = "<group>"; };
 		6A45FE751D2CEF1A0005B813 /* NTInformationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTInformationTableViewController.h; sourceTree = "<group>"; };
 		6A45FE761D2CEF1A0005B813 /* NTInformationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTInformationTableViewController.m; sourceTree = "<group>"; };
 		6A45FE781D2CF02E0005B813 /* NTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNavigationController.h; sourceTree = "<group>"; };
@@ -129,6 +131,23 @@
 			path = Primary;
 			sourceTree = "<group>";
 		};
+		6A3B516D1D2D682A0099A284 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B516E1D2D682A0099A284 /* NTAttentionViewController.h */,
+				6A3B516F1D2D682A0099A284 /* NTAttentionViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		6A3B51771D2D68B50099A284 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B51781D2D68D80099A284 /* NTAttentionViewController.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
 		6A45FE601D2CEB790005B813 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,8 +199,8 @@
 		6A45FE661D2CEB940005B813 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6A45FE721D2CEF0A0005B813 /* NTAttentionTableViewController.h */,
-				6A45FE731D2CEF0A0005B813 /* NTAttentionTableViewController.m */,
+				6A3B516D1D2D682A0099A284 /* Class */,
+				6A3B51771D2D68B50099A284 /* Xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -454,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8E92C71D1C5F8200C502B1 /* Assets.xcassets in Resources */,
+				6A3B51791D2D68D80099A284 /* NTAttentionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,11 +498,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A45FE741D2CEF0A0005B813 /* NTAttentionTableViewController.m in Sources */,
 				6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */,
 				6A45FE801D2CF5610005B813 /* NTTestViewController.m in Sources */,
 				6A45FE771D2CEF1A0005B813 /* NTInformationTableViewController.m in Sources */,
 				6AFE0D821D22ECB8008045C0 /* NTTabBar.m in Sources */,
+				6A3B51711D2D682A0099A284 /* NTAttentionViewController.m in Sources */,
 				6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */,
 				6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */,
 				6A45FE6E1D2CEEDC0005B813 /* NTEssenceTableViewController.m in Sources */,

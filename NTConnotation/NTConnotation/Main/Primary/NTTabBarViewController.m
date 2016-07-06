@@ -12,7 +12,7 @@
 // 四个子控制器
 #import "NTEssenceTableViewController.h"
 #import "NTLatestTableViewController.h"
-#import "NTAttentionTableViewController.h"
+#import "NTAttentionViewController.h"
 #import "NTInformationTableViewController.h"
 
 @interface NTTabBarViewController ()
@@ -42,7 +42,7 @@
     [self appendChildViewController:essenceTableViewController title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     NTLatestTableViewController *latestTableViewController = [[NTLatestTableViewController alloc]init];
     [self appendChildViewController:latestTableViewController title:@"最新" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
-    NTAttentionTableViewController *attentionTableViewController = [[NTAttentionTableViewController alloc]init];
+    NTAttentionViewController *attentionTableViewController = [[NTAttentionViewController alloc]init];
     [self appendChildViewController:attentionTableViewController title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     NTInformationTableViewController *informationTableViewController = [[NTInformationTableViewController alloc]init];
     [self appendChildViewController:informationTableViewController title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
