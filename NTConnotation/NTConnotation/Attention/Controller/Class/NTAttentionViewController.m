@@ -7,6 +7,7 @@
 //
 
 #import "NTAttentionViewController.h"
+#import "NTLoginViewController.h"
 
 @interface NTAttentionViewController ()
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+#pragma mark - methods
+
+- (IBAction)loginButtonAction:(id)sender {
+    [self presentViewController:[[NTLoginViewController alloc]init] animated:YES completion:^{
+        
+    }];
 }
 
 @end

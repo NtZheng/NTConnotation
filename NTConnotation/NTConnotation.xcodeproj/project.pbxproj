@@ -20,6 +20,8 @@
 		6A8E92C71D1C5F8200C502B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E92C61D1C5F8200C502B1 /* Assets.xcassets */; };
 		6A8E92D51D1C5F8200C502B1 /* NTConnotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92D41D1C5F8200C502B1 /* NTConnotationTests.m */; };
 		6A8E92E01D1C5F8200C502B1 /* NTConnotationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */; };
+		6AC194F81D351AAD00BC952E /* NTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC194F61D351AAD00BC952E /* NTLoginViewController.m */; };
+		6AC194F91D351AAD00BC952E /* NTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC194F71D351AAD00BC952E /* NTLoginViewController.xib */; };
 		6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */; };
 		6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */; };
 		6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7E1D22EC5E008045C0 /* AppDelegate.m */; };
@@ -72,6 +74,9 @@
 		6A8E92DB1D1C5F8200C502B1 /* NTConnotationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTConnotationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTConnotationUITests.m; sourceTree = "<group>"; };
 		6A8E92E11D1C5F8200C502B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AC194F51D351AAD00BC952E /* NTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLoginViewController.h; sourceTree = "<group>"; };
+		6AC194F61D351AAD00BC952E /* NTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLoginViewController.m; sourceTree = "<group>"; };
+		6AC194F71D351AAD00BC952E /* NTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTLoginViewController.xib; sourceTree = "<group>"; };
 		6AFE0D771D22EBDD008045C0 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		6AFE0D791D22EBDD008045C0 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -127,6 +132,9 @@
 				6AFE0D811D22ECB8008045C0 /* NTTabBar.m */,
 				6A45FE781D2CF02E0005B813 /* NTNavigationController.h */,
 				6A45FE791D2CF02E0005B813 /* NTNavigationController.m */,
+				6AC194F51D351AAD00BC952E /* NTLoginViewController.h */,
+				6AC194F61D351AAD00BC952E /* NTLoginViewController.m */,
+				6AC194F71D351AAD00BC952E /* NTLoginViewController.xib */,
 			);
 			path = Primary;
 			sourceTree = "<group>";
@@ -473,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8E92C71D1C5F8200C502B1 /* Assets.xcassets in Resources */,
+				6AC194F91D351AAD00BC952E /* NTLoginViewController.xib in Resources */,
 				6A3B51791D2D68D80099A284 /* NTAttentionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +511,7 @@
 				6A45FE801D2CF5610005B813 /* NTTestViewController.m in Sources */,
 				6A45FE771D2CEF1A0005B813 /* NTInformationTableViewController.m in Sources */,
 				6AFE0D821D22ECB8008045C0 /* NTTabBar.m in Sources */,
+				6AC194F81D351AAD00BC952E /* NTLoginViewController.m in Sources */,
 				6A3B51711D2D682A0099A284 /* NTAttentionViewController.m in Sources */,
 				6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */,
 				6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */,
