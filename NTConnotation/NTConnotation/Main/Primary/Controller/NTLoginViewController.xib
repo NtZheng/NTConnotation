@@ -83,13 +83,42 @@
                         <constraint firstItem="9ND-kK-cr6" firstAttribute="leading" secondItem="kTH-xh-xT3" secondAttribute="trailing" id="xy9-JF-y8Q"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40I-Dp-8Sf">
+                    <rect key="frame" x="0.0" y="30" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RW-pf-IF6">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="VeO-GX-CgU"/>
+                            </constraints>
+                            <state key="normal" image="login_close_icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FS-0Z-E2Z">
+                            <rect key="frame" x="508" y="0.0" width="72" height="50"/>
+                            <state key="normal" title="注册账号"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7RW-pf-IF6" secondAttribute="bottom" id="6vc-aL-6IK"/>
+                        <constraint firstItem="7RW-pf-IF6" firstAttribute="leading" secondItem="40I-Dp-8Sf" secondAttribute="leading" id="Ega-ar-FSU"/>
+                        <constraint firstAttribute="height" constant="50" id="VmL-Lf-EI5"/>
+                        <constraint firstItem="7RW-pf-IF6" firstAttribute="top" secondItem="40I-Dp-8Sf" secondAttribute="top" id="lja-ib-zmK"/>
+                        <constraint firstItem="3FS-0Z-E2Z" firstAttribute="top" secondItem="40I-Dp-8Sf" secondAttribute="top" id="qHi-51-GDn"/>
+                        <constraint firstAttribute="trailing" secondItem="3FS-0Z-E2Z" secondAttribute="trailing" constant="20" id="sWg-2s-mOJ"/>
+                        <constraint firstAttribute="bottom" secondItem="3FS-0Z-E2Z" secondAttribute="bottom" id="x8K-FX-UzS"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="W9N-JU-OoR" secondAttribute="trailing" id="09i-an-cKB"/>
+                <constraint firstAttribute="trailing" secondItem="40I-Dp-8Sf" secondAttribute="trailing" id="23G-QT-4UK"/>
+                <constraint firstItem="40I-Dp-8Sf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FF3-HY-Q6F"/>
                 <constraint firstAttribute="bottom" secondItem="W9N-JU-OoR" secondAttribute="bottom" id="FHd-X6-bec"/>
                 <constraint firstItem="W9N-JU-OoR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NBm-CU-6DL"/>
                 <constraint firstAttribute="bottom" secondItem="Mgb-f9-v5H" secondAttribute="bottom" constant="30" id="ND1-Pk-1cF"/>
+                <constraint firstItem="40I-Dp-8Sf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="STi-xJ-zFf"/>
                 <constraint firstItem="Mgb-f9-v5H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WnT-W8-Wod"/>
                 <constraint firstItem="W9N-JU-OoR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cHq-SG-Kjh"/>
                 <constraint firstAttribute="trailing" secondItem="Mgb-f9-v5H" secondAttribute="trailing" id="sog-nQ-MRV"/>
@@ -99,6 +128,7 @@
     <resources>
         <image name="login_QQ_icon" width="70" height="70"/>
         <image name="login_QQ_icon_click" width="70" height="70"/>
+        <image name="login_close_icon" width="16" height="16"/>
         <image name="login_register_background" width="320" height="568"/>
         <image name="login_register_left_line" width="103" height="1"/>
         <image name="login_register_right_line" width="103" height="1"/>
