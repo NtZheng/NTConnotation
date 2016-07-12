@@ -41,22 +41,22 @@
                                 <constraint firstAttribute="height" constant="1" id="phh-L5-gQH"/>
                             </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v61-Rk-wgV">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v61-Rk-wgV" customClass="NTQuickLoginButton">
                             <rect key="frame" x="200" y="41" width="200" height="100"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="G9s-4E-8QV"/>
                             </constraints>
-                            <state key="normal" title="Button" image="login_QQ_icon"/>
+                            <state key="normal" title="QQ" image="login_QQ_icon"/>
                             <state key="highlighted" image="login_QQ_icon_click"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-Sk-Mk3">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-Sk-Mk3" customClass="NTQuickLoginButton">
                             <rect key="frame" x="0.0" y="41" width="200" height="100"/>
-                            <state key="normal" title="Button" image="login_sina_icon"/>
+                            <state key="normal" title="新浪微博" image="login_sina_icon"/>
                             <state key="highlighted" image="login_sina_icon_click"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL2-Dz-McD">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL2-Dz-McD" customClass="NTQuickLoginButton">
                             <rect key="frame" x="400" y="41" width="200" height="100"/>
-                            <state key="normal" title="Button" image="login_tecent_icon"/>
+                            <state key="normal" title="腾讯微博" image="login_tecent_icon"/>
                             <state key="highlighted" image="login_tecent_icon_click"/>
                         </button>
                     </subviews>
