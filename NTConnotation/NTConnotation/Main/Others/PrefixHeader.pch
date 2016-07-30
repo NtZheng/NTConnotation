@@ -11,6 +11,9 @@
 
 #define NTColor(R,G,B) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
 
+#define NTScreenWidth [UIScreen mainScreen].bounds.size.width
+#define NTScreenHeight [UIScreen mainScreen].bounds.size.height
+
 //引入文件
 #import "UIButton+Extension.h"
 #import "UIView+Extension.h"
