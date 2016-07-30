@@ -24,6 +24,7 @@
 		6A8E92C71D1C5F8200C502B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E92C61D1C5F8200C502B1 /* Assets.xcassets */; };
 		6A8E92D51D1C5F8200C502B1 /* NTConnotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92D41D1C5F8200C502B1 /* NTConnotationTests.m */; };
 		6A8E92E01D1C5F8200C502B1 /* NTConnotationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */; };
+		6AF25E811D4CBEF400F693F0 /* NTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF25E801D4CBEF400F693F0 /* NTTextField.m */; };
 		6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */; };
 		6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */; };
 		6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7E1D22EC5E008045C0 /* AppDelegate.m */; };
@@ -82,6 +83,8 @@
 		6A8E92DB1D1C5F8200C502B1 /* NTConnotationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTConnotationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTConnotationUITests.m; sourceTree = "<group>"; };
 		6A8E92E11D1C5F8200C502B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF25E7F1D4CBEF400F693F0 /* NTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTextField.h; sourceTree = "<group>"; };
+		6AF25E801D4CBEF400F693F0 /* NTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTextField.m; sourceTree = "<group>"; };
 		6AFE0D771D22EBDD008045C0 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		6AFE0D791D22EBDD008045C0 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				6A2C17681D35433D0084B354 /* NTTabBar.m */,
 				6A2C176E1D3549340084B354 /* NTQuickLoginButton.h */,
 				6A2C176F1D3549340084B354 /* NTQuickLoginButton.m */,
+				6AF25E7F1D4CBEF400F693F0 /* NTTextField.h */,
+				6AF25E801D4CBEF400F693F0 /* NTTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */,
 				6A2C176D1D35433D0084B354 /* NTTabBar.m in Sources */,
 				6A45FE801D2CF5610005B813 /* NTTestViewController.m in Sources */,
+				6AF25E811D4CBEF400F693F0 /* NTTextField.m in Sources */,
 				6A2C17691D35433D0084B354 /* NTLoginViewController.m in Sources */,
 				6A45FE771D2CEF1A0005B813 /* NTInformationTableViewController.m in Sources */,
 				6A2C176C1D35433D0084B354 /* NTTabBarViewController.m in Sources */,

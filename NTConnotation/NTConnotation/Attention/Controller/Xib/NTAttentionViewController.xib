@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-E9-wwK">
-                    <rect key="frame" x="183" y="269" width="234.5" height="61"/>
+                    <rect key="frame" x="183" y="269" width="235" height="61"/>
                     <string key="text">快快登录吧，关注百思最in牛人
 好友动态让你过把瘾儿~
 欧耶~~~！</string>
@@ -32,7 +32,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biJ-uu-u8j">
-                    <rect key="frame" x="178.5" y="370" width="243" height="48"/>
+                    <rect key="frame" x="179" y="370" width="243" height="48"/>
                     <state key="normal" title="立即登录注册" backgroundImage="friendsTrend_login">
                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
