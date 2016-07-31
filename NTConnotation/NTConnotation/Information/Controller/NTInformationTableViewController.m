@@ -7,6 +7,7 @@
 //
 
 #import "NTInformationTableViewController.h"
+#import "NTInformationTableViewCell.h"
 
 @interface NTInformationTableViewController ()
 
@@ -21,8 +22,16 @@
 
 #pragma mark - dataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    cell.textLabel.text = @"nineteen";
+    NTInformationTableViewCell *cell = [[NTInformationTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    if (indexPath.section == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"publish-audio"];
+        cell.textLabel.text = @"登录/注册";
+    } else if (indexPath.section == 1) {
+        cell.textLabel.text = @"离线下载";
+        cell.imageView.image = nil;
+    } else {
+        
+    }
     return cell;
 }
 
