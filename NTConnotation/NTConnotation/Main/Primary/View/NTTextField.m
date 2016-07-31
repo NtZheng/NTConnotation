@@ -13,6 +13,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.tintColor = [UIColor whiteColor];
+    NSMutableDictionary *attributeDictionary = [NSMutableDictionary dictionary];
+    attributeDictionary[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    self.attributedPlaceholder = [[NSAttributedString alloc]initWithString:self.placeholder attributes:attributeDictionary];
 }
 
 @end
