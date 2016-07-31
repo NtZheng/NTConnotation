@@ -8,6 +8,7 @@
 
 #import "NTInformationTableViewController.h"
 #import "NTInformationTableViewCell.h"
+#import "NTInformationFooterView.h"
 
 @interface NTInformationTableViewController ()
 
@@ -17,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.tableView.tableFooterView = [[NTInformationFooterView alloc]initWithFrame:CGRectMake(0, 0, NTScreenWidth, 200)];
 }
 
 #pragma mark - dataSource
@@ -36,7 +37,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -48,7 +49,11 @@
     return 10;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0.02;
+    if (section == 1) {
+        return 10;
+    } else {
+        return 0.02;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
