@@ -44,7 +44,7 @@
     [self appendChildViewController:latestTableViewController title:@"最新" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     NTAttentionViewController *attentionTableViewController = [[NTAttentionViewController alloc]init];
     [self appendChildViewController:attentionTableViewController title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
-    NTInformationTableViewController *informationTableViewController = [[NTInformationTableViewController alloc]init];
+    NTInformationTableViewController *informationTableViewController = [[NTInformationTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
     [self appendChildViewController:informationTableViewController title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     
     
