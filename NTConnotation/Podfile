@@ -8,6 +8,7 @@ target 'NTConnotation' do
   # Pods for NTConnotation
 pod "AFNetworking"
 pod "SDWebImage"
+pod "MJExtension"
 
   target 'NTConnotationTests' do
     inherit! :search_paths
