@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35C5262C85734F568EDCBD4E /* libPods-NTConnotation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2BCC1A90E33CFD3FB26EC6 /* libPods-NTConnotation.a */; };
 		6A25D0361D21A51E00BACA9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25D02F1D21A51E00BACA9D /* main.m */; };
 		6A2C17691D35433D0084B354 /* NTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C17601D35433D0084B354 /* NTLoginViewController.m */; };
 		6A2C176A1D35433D0084B354 /* NTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A2C17611D35433D0084B354 /* NTLoginViewController.xib */; };
@@ -29,6 +30,8 @@
 		6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */; };
 		6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */; };
 		6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7E1D22EC5E008045C0 /* AppDelegate.m */; };
+		97C413D0CC4A6A0434C035A4 /* libPods-NTConnotationUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3DBCBE0CA4191E7466ACCD /* libPods-NTConnotationUITests.a */; };
+		9B305672D68A57E1E21529E1 /* libPods-NTConnotationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8ECEBDF8A5CA927F8C52AF3 /* libPods-NTConnotationTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C3D778D6E4D218B68B5281D /* Pods-NTConnotation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTConnotation.release.xcconfig"; path = "Pods/Target Support Files/Pods-NTConnotation/Pods-NTConnotation.release.xcconfig"; sourceTree = "<group>"; };
+		321217780E3537383E8A2B98 /* Pods-NTConnotation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTConnotation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NTConnotation/Pods-NTConnotation.debug.xcconfig"; sourceTree = "<group>"; };
+		4A2BCC1A90E33CFD3FB26EC6 /* libPods-NTConnotation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NTConnotation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A25D02F1D21A51E00BACA9D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A25D0301D21A51E00BACA9D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6A2C175F1D35433D0084B354 /* NTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLoginViewController.h; sourceTree = "<group>"; };
@@ -94,6 +100,12 @@
 		6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		6AFE0D7D1D22EC5E008045C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6AFE0D7E1D22EC5E008045C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74555818CDFEFDB1C5C2F1BD /* Pods-NTConnotationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTConnotationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NTConnotationUITests/Pods-NTConnotationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D97A81491C418B1EBA4287F /* Pods-NTConnotationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTConnotationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NTConnotationUITests/Pods-NTConnotationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ACE6249BA34434B811D90B8A /* Pods-NTConnotationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTConnotationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NTConnotationTests/Pods-NTConnotationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7FF94F2A1E7748018FFB1CC /* Pods-NTConnotationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTConnotationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NTConnotationTests/Pods-NTConnotationTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8ECEBDF8A5CA927F8C52AF3 /* libPods-NTConnotationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NTConnotationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3DBCBE0CA4191E7466ACCD /* libPods-NTConnotationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NTConnotationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C5262C85734F568EDCBD4E /* libPods-NTConnotation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B305672D68A57E1E21529E1 /* libPods-NTConnotationTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,12 +129,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C413D0CC4A6A0434C035A4 /* libPods-NTConnotationUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14144840747F74E6EF967F52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A2BCC1A90E33CFD3FB26EC6 /* libPods-NTConnotation.a */,
+				B8ECEBDF8A5CA927F8C52AF3 /* libPods-NTConnotationTests.a */,
+				BF3DBCBE0CA4191E7466ACCD /* libPods-NTConnotationUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A25D02E1D21A51E00BACA9D /* Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +313,8 @@
 				6A8E92D31D1C5F8200C502B1 /* NTConnotationTests */,
 				6A8E92DE1D1C5F8200C502B1 /* NTConnotationUITests */,
 				6A8E92B81D1C5F8200C502B1 /* Products */,
+				B237F37FAA963FC550F6B4CE /* Pods */,
+				14144840747F74E6EF967F52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -404,6 +431,19 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		B237F37FAA963FC550F6B4CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				321217780E3537383E8A2B98 /* Pods-NTConnotation.debug.xcconfig */,
+				0C3D778D6E4D218B68B5281D /* Pods-NTConnotation.release.xcconfig */,
+				ACE6249BA34434B811D90B8A /* Pods-NTConnotationTests.debug.xcconfig */,
+				B7FF94F2A1E7748018FFB1CC /* Pods-NTConnotationTests.release.xcconfig */,
+				74555818CDFEFDB1C5C2F1BD /* Pods-NTConnotationUITests.debug.xcconfig */,
+				9D97A81491C418B1EBA4287F /* Pods-NTConnotationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,9 +451,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A8E92E41D1C5F8200C502B1 /* Build configuration list for PBXNativeTarget "NTConnotation" */;
 			buildPhases = (
+				435D9CF8C5373096817AFFFE /* [CP] Check Pods Manifest.lock */,
 				6A8E92B31D1C5F8200C502B1 /* Sources */,
 				6A8E92B41D1C5F8200C502B1 /* Frameworks */,
 				6A8E92B51D1C5F8200C502B1 /* Resources */,
+				D370A193BAC255346DE1776E /* [CP] Embed Pods Frameworks */,
+				59E73228299B203C9A723895 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,9 +471,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A8E92E71D1C5F8200C502B1 /* Build configuration list for PBXNativeTarget "NTConnotationTests" */;
 			buildPhases = (
+				AE3A384E031B27195C288C16 /* [CP] Check Pods Manifest.lock */,
 				6A8E92CC1D1C5F8200C502B1 /* Sources */,
 				6A8E92CD1D1C5F8200C502B1 /* Frameworks */,
 				6A8E92CE1D1C5F8200C502B1 /* Resources */,
+				41300BC19CBB3E6F3B0FBB8F /* [CP] Embed Pods Frameworks */,
+				4CECAA4226514760E10D5756 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -446,9 +492,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A8E92EA1D1C5F8200C502B1 /* Build configuration list for PBXNativeTarget "NTConnotationUITests" */;
 			buildPhases = (
+				D0C283CD4587B02CCCDE7372 /* [CP] Check Pods Manifest.lock */,
 				6A8E92D71D1C5F8200C502B1 /* Sources */,
 				6A8E92D81D1C5F8200C502B1 /* Frameworks */,
 				6A8E92D91D1C5F8200C502B1 /* Resources */,
+				0F86F1FA2ADC4019AE7DC290 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,6 +580,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F86F1FA2ADC4019AE7DC290 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTConnotationUITests/Pods-NTConnotationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41300BC19CBB3E6F3B0FBB8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTConnotationTests/Pods-NTConnotationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		435D9CF8C5373096817AFFFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CECAA4226514760E10D5756 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTConnotationTests/Pods-NTConnotationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E73228299B203C9A723895 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTConnotation/Pods-NTConnotation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3A384E031B27195C288C16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C283CD4587B02CCCDE7372 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D370A193BAC255346DE1776E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTConnotation/Pods-NTConnotation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A8E92B31D1C5F8200C502B1 /* Sources */ = {
@@ -674,6 +845,7 @@
 		};
 		6A8E92E51D1C5F8200C502B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 321217780E3537383E8A2B98 /* Pods-NTConnotation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -688,6 +860,7 @@
 		};
 		6A8E92E61D1C5F8200C502B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3D778D6E4D218B68B5281D /* Pods-NTConnotation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -702,6 +875,7 @@
 		};
 		6A8E92E81D1C5F8200C502B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE6249BA34434B811D90B8A /* Pods-NTConnotationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NTConnotationTests/Info.plist;
@@ -714,6 +888,7 @@
 		};
 		6A8E92E91D1C5F8200C502B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FF94F2A1E7748018FFB1CC /* Pods-NTConnotationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NTConnotationTests/Info.plist;
@@ -726,6 +901,7 @@
 		};
 		6A8E92EB1D1C5F8200C502B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74555818CDFEFDB1C5C2F1BD /* Pods-NTConnotationUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NTConnotationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -737,6 +913,7 @@
 		};
 		6A8E92EC1D1C5F8200C502B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D97A81491C418B1EBA4287F /* Pods-NTConnotationUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NTConnotationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
