@@ -16,8 +16,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor redColor];
-        
         
         NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
         parameters[@"a"] = @"square";
@@ -54,9 +52,15 @@
         
         [button setTitle:model.name forState:UIControlStateNormal];
         [button sd_setImageWithURL:[NSURL URLWithString:model.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"login_QQ_icon"]];
-        
-        
+        [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
     }
+    UITableView *tableView = (UITableView *)self.superview;
+    self.height = self.subviews.lastObject.y + self.subviews.lastObject.height;
+    tableView.tableFooterView = self;
+}
+
+- (void)test {
+    NSLog(@"1");
 }
 
 @end

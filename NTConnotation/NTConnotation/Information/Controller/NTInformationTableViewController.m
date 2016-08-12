@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.tableFooterView = [[NTInformationFooterView alloc]initWithFrame:CGRectMake(0, 0, NTScreenWidth, 200)];
+    self.tableView.tableFooterView = [[NTInformationFooterView alloc]init];
 }
 
 #pragma mark - dataSource
@@ -48,19 +48,12 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 10;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     if (section == 1) {
         return 10;
     } else {
         return 0.02;
-    }
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 2) {
-        return 100;
-    } else {
-        return 44;
     }
 }
 
