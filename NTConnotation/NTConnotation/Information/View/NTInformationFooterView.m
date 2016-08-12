@@ -13,7 +13,22 @@
 #import "UIButton+WebCache.h"
 #import "NTInformationSquareButton.h"
 
+@interface NTInformationFooterView()
+
+@property (nonatomic, strong) NSMutableDictionary<NSString *, NTSquareModel *> *allSquares;
+
+@end
+
 @implementation NTInformationFooterView
+
+
+#pragma mark - 懒加载
+- (NSMutableDictionary<NSString *,NTSquareModel *> *)allSquares {
+    if (_allSquares == nil) {
+        _allSquares = [NSMutableDictionary dictionary];
+    }
+    return _allSquares;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -51,17 +66,20 @@
         button.height = height;
         [self addSubview:button];
         
+        self.allSquares[button.description] = model;
+        
         [button setTitle:model.name forState:UIControlStateNormal];
         [button sd_setImageWithURL:[NSURL URLWithString:model.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"login_QQ_icon"]];
-        [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self action:@selector(buttonClickAction: ) forControlEvents:UIControlEventTouchUpInside];
     }
     UITableView *tableView = (UITableView *)self.superview;
     self.height = self.subviews.lastObject.y + self.subviews.lastObject.height;
     tableView.tableFooterView = self;
 }
 
-- (void)test {
-    NSLog(@"1");
+- (void)buttonClickAction: (UIButton *)button {
+    NTSquareModel *model = self.allSquares[button.description];
+    NSLog(@"%@",model.url);
 }
 
 @end
