@@ -29,6 +29,8 @@
 		6A8E92E01D1C5F8200C502B1 /* NTConnotationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */; };
 		6A9467AE1D4E26FD00C4ADB6 /* NTInformationFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9467AD1D4E26FD00C4ADB6 /* NTInformationFooterView.m */; };
 		6AAB843F1D5D76D500833F15 /* NTInformationSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB843E1D5D76D500833F15 /* NTInformationSquareButton.m */; };
+		6AC0F3C91D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0F3C71D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m */; };
+		6AC0F3CA1D5DADAB00E7B0D0 /* NTInformationWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC0F3C81D5DADAB00E7B0D0 /* NTInformationWebViewViewController.xib */; };
 		6AF25E811D4CBEF400F693F0 /* NTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF25E801D4CBEF400F693F0 /* NTTextField.m */; };
 		6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D781D22EBDD008045C0 /* UIButton+Extension.m */; };
 		6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */; };
@@ -101,6 +103,9 @@
 		6A9467AD1D4E26FD00C4ADB6 /* NTInformationFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTInformationFooterView.m; sourceTree = "<group>"; };
 		6AAB843D1D5D76D500833F15 /* NTInformationSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTInformationSquareButton.h; sourceTree = "<group>"; };
 		6AAB843E1D5D76D500833F15 /* NTInformationSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTInformationSquareButton.m; sourceTree = "<group>"; };
+		6AC0F3C61D5DADAB00E7B0D0 /* NTInformationWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTInformationWebViewViewController.h; sourceTree = "<group>"; };
+		6AC0F3C71D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTInformationWebViewViewController.m; sourceTree = "<group>"; };
+		6AC0F3C81D5DADAB00E7B0D0 /* NTInformationWebViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NTInformationWebViewViewController.xib; path = ../Controller/NTInformationWebViewViewController.xib; sourceTree = "<group>"; };
 		6AF25E7F1D4CBEF400F693F0 /* NTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTextField.h; sourceTree = "<group>"; };
 		6AF25E801D4CBEF400F693F0 /* NTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTextField.m; sourceTree = "<group>"; };
 		6AFE0D771D22EBDD008045C0 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
@@ -295,6 +300,8 @@
 			children = (
 				6A45FE751D2CEF1A0005B813 /* NTInformationTableViewController.h */,
 				6A45FE761D2CEF1A0005B813 /* NTInformationTableViewController.m */,
+				6AC0F3C61D5DADAB00E7B0D0 /* NTInformationWebViewViewController.h */,
+				6AC0F3C71D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -409,6 +416,7 @@
 				6A5840B61D4E3C930081ADF3 /* Model */,
 				6A5FE0EE1D4DC97900AA8BD8 /* View */,
 				6A45FE691D2CEB9B0005B813 /* Controller */,
+				6AC0F3CB1D5DADBD00E7B0D0 /* Xib */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -431,6 +439,14 @@
 				6AFE0D761D22EBDD008045C0 /* Category */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		6AC0F3CB1D5DADBD00E7B0D0 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				6AC0F3C81D5DADAB00E7B0D0 /* NTInformationWebViewViewController.xib */,
+			);
+			path = Xib;
 			sourceTree = "<group>";
 		};
 		6AFE0D761D22EBDD008045C0 /* Category */ = {
@@ -577,6 +593,7 @@
 				6A8E92C71D1C5F8200C502B1 /* Assets.xcassets in Resources */,
 				6A2C176A1D35433D0084B354 /* NTLoginViewController.xib in Resources */,
 				6A3B51791D2D68D80099A284 /* NTAttentionViewController.xib in Resources */,
+				6AC0F3CA1D5DADAB00E7B0D0 /* NTInformationWebViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +761,7 @@
 				6A45FE711D2CEEF80005B813 /* NTLatestTableViewController.m in Sources */,
 				6A9467AE1D4E26FD00C4ADB6 /* NTInformationFooterView.m in Sources */,
 				6A25D0361D21A51E00BACA9D /* main.m in Sources */,
+				6AC0F3C91D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

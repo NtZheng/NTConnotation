@@ -12,6 +12,7 @@
 #import "NTSquareModel.h"
 #import "UIButton+WebCache.h"
 #import "NTInformationSquareButton.h"
+#import "NTInformationWebViewViewController.h"
 
 @interface NTInformationFooterView()
 
@@ -79,7 +80,19 @@
 
 - (void)buttonClickAction: (UIButton *)button {
     NTSquareModel *model = self.allSquares[button.description];
-    NSLog(@"%@",model.url);
+    NSString *URL = model.url;
+    if ([URL hasPrefix:@"http"]) {
+        NTInformationWebViewViewController *webViewViewController = [[NTInformationWebViewViewController alloc]init];
+        webViewViewController.URL = URL;
+        webViewViewController.hidesBottomBarWhenPushed = YES;
+        UITabBarController *tarBarController = (UITabBarController *)self.window.rootViewController;
+        UINavigationController *currentNavigationController = tarBarController.selectedViewController;
+        [currentNavigationController pushViewController:webViewViewController animated:YES];
+    } else if ([URL hasPrefix:@"mob"]) {
+        
+    } else {
+        
+    }
 }
 
 @end
