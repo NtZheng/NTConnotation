@@ -11,6 +11,7 @@
 #import "MJExtension.h"
 #import "NTSquareModel.h"
 #import "UIButton+WebCache.h"
+#import "NTInformationSquareButton.h"
 
 @implementation NTInformationFooterView
 
@@ -43,7 +44,7 @@
     for (int i = 0; i < squares.count; i++) {
         NTSquareModel *model = squares[i];
         
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        NTInformationSquareButton *button = [NTInformationSquareButton buttonWithType:UIButtonTypeCustom];
         button.x = (i % maxColumn) * width;
         button.y = (i / maxColumn) * width;
         button.width = width;
