@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NTInformationWebViewViewController">
             <connections>
+                <outlet property="backBarButtonItem" destination="nRU-h1-eBD" id="YR3-zp-Rqn"/>
+                <outlet property="forwardBarButtonItem" destination="wBn-Ys-ue9" id="d6L-pJ-gIY"/>
+                <outlet property="refreshBarButtonItem" destination="20a-ET-dyO" id="wyq-Gq-6FV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="5Ws-0D-JCk" id="aOK-Q4-8bP"/>
             </connections>
@@ -19,15 +22,30 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-Ib-8JH">
                     <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                     <items>
-                        <barButtonItem image="webView_left" id="nRU-h1-eBD"/>
-                        <barButtonItem image="webView_right" id="wBn-Ys-ue9"/>
+                        <barButtonItem enabled="NO" image="webView_left" id="nRU-h1-eBD">
+                            <connections>
+                                <action selector="backAction:" destination="-1" id="c63-Nd-bCs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" image="webView_right" id="wBn-Ys-ue9">
+                            <connections>
+                                <action selector="forwardAction:" destination="-1" id="5H3-Vq-WYo"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="d1P-Cx-FxE"/>
-                        <barButtonItem systemItem="refresh" id="20a-ET-dyO"/>
+                        <barButtonItem systemItem="refresh" id="20a-ET-dyO">
+                            <connections>
+                                <action selector="refreshAction:" destination="-1" id="R1i-Ju-dhJ"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ws-0D-JCk">
                     <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="gfY-Z2-Mq3"/>
+                    </connections>
                 </webView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
