@@ -28,6 +28,7 @@
 		6A8E92D51D1C5F8200C502B1 /* NTConnotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92D41D1C5F8200C502B1 /* NTConnotationTests.m */; };
 		6A8E92E01D1C5F8200C502B1 /* NTConnotationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E92DF1D1C5F8200C502B1 /* NTConnotationUITests.m */; };
 		6A9467AE1D4E26FD00C4ADB6 /* NTInformationFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9467AD1D4E26FD00C4ADB6 /* NTInformationFooterView.m */; };
+		6A9F319D1D5F1E4C0085737C /* NTSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F319C1D5F1E4C0085737C /* NTSettingTableViewController.m */; };
 		6AAB843F1D5D76D500833F15 /* NTInformationSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB843E1D5D76D500833F15 /* NTInformationSquareButton.m */; };
 		6AC0F3C91D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0F3C71D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m */; };
 		6AC0F3CA1D5DADAB00E7B0D0 /* NTInformationWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC0F3C81D5DADAB00E7B0D0 /* NTInformationWebViewViewController.xib */; };
@@ -101,6 +102,8 @@
 		6A8E92E11D1C5F8200C502B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A9467AC1D4E26FD00C4ADB6 /* NTInformationFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTInformationFooterView.h; sourceTree = "<group>"; };
 		6A9467AD1D4E26FD00C4ADB6 /* NTInformationFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTInformationFooterView.m; sourceTree = "<group>"; };
+		6A9F319B1D5F1E4C0085737C /* NTSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSettingTableViewController.h; sourceTree = "<group>"; };
+		6A9F319C1D5F1E4C0085737C /* NTSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSettingTableViewController.m; sourceTree = "<group>"; };
 		6AAB843D1D5D76D500833F15 /* NTInformationSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTInformationSquareButton.h; sourceTree = "<group>"; };
 		6AAB843E1D5D76D500833F15 /* NTInformationSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTInformationSquareButton.m; sourceTree = "<group>"; };
 		6AC0F3C61D5DADAB00E7B0D0 /* NTInformationWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTInformationWebViewViewController.h; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				6A45FE761D2CEF1A0005B813 /* NTInformationTableViewController.m */,
 				6AC0F3C61D5DADAB00E7B0D0 /* NTInformationWebViewViewController.h */,
 				6AC0F3C71D5DADAB00E7B0D0 /* NTInformationWebViewViewController.m */,
+				6A9F319B1D5F1E4C0085737C /* NTSettingTableViewController.h */,
+				6A9F319C1D5F1E4C0085737C /* NTSettingTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -743,6 +748,7 @@
 			files = (
 				6AFE0D7C1D22EBDD008045C0 /* UIView+Extension.m in Sources */,
 				6A2C176D1D35433D0084B354 /* NTTabBar.m in Sources */,
+				6A9F319D1D5F1E4C0085737C /* NTSettingTableViewController.m in Sources */,
 				6A45FE801D2CF5610005B813 /* NTTestViewController.m in Sources */,
 				6AAB843F1D5D76D500833F15 /* NTInformationSquareButton.m in Sources */,
 				6AF25E811D4CBEF400F693F0 /* NTTextField.m in Sources */,
