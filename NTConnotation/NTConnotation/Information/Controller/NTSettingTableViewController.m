@@ -7,6 +7,7 @@
 //
 
 #import "NTSettingTableViewController.h"
+#import "NTCacheTableViewCell.h"
 
 @interface NTSettingTableViewController ()
 
@@ -21,34 +22,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.tableView registerClass:[NTCacheTableViewCell class] forCellReuseIdentifier:@"cacheCell"];
 }
 
 #pragma mark - dataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    cell.textLabel.text = [NSString stringWithFormat:@"清楚缓存 - %llu",[self getCacheSzie]];
-    return cell;
+    if (indexPath.section == 0) {
+        NTCacheTableViewCell *cell = (NTCacheTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"cacheCell"];
+        [cell updateStatus];
+        return cell;
+    } else {
+        UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        cell.textLabel.text = @"nineteen";
+        return cell;
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
+#pragma mark - delegate
+
+
 #pragma mark - methods
-- (unsigned long long)getCacheSzie {
-    unsigned long long size = 0;
-    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"default"];
-    for (NSString *subPath in [[NSFileManager defaultManager] subpathsAtPath:cachePath]) {
-        NSString *fullPath = [cachePath stringByAppendingPathComponent:subPath];
-        NSDictionary *attribute = [[NSFileManager defaultManager] attributesOfItemAtPath:fullPath error:nil];
-        size += [attribute[NSFileSize] unsignedLongLongValue];
-    }
-    return size;
-}
+
 
 @end
