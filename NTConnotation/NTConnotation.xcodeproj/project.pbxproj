@@ -22,6 +22,7 @@
 		6A45FE771D2CEF1A0005B813 /* NTInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE761D2CEF1A0005B813 /* NTInformationTableViewController.m */; };
 		6A45FE801D2CF5610005B813 /* NTTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE7F1D2CF5610005B813 /* NTTestViewController.m */; };
 		6A45FE831D2CF5E90005B813 /* UIBarButtonItem+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A45FE821D2CF5E90005B813 /* UIBarButtonItem+Custom.m */; };
+		6A4D97191D6004820036B711 /* NSString+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D97181D6004820036B711 /* NSString+Cache.m */; };
 		6A5840B91D4E3CB10081ADF3 /* NTSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5840B81D4E3CB10081ADF3 /* NTSquareModel.m */; };
 		6A5FE0F11D4DC98A00AA8BD8 /* NTInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FE0F01D4DC98A00AA8BD8 /* NTInformationTableViewCell.m */; };
 		6A8E92C71D1C5F8200C502B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E92C61D1C5F8200C502B1 /* Assets.xcassets */; };
@@ -87,6 +88,8 @@
 		6A45FE7F1D2CF5610005B813 /* NTTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTestViewController.m; sourceTree = "<group>"; };
 		6A45FE811D2CF5E90005B813 /* UIBarButtonItem+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Custom.h"; sourceTree = "<group>"; };
 		6A45FE821D2CF5E90005B813 /* UIBarButtonItem+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Custom.m"; sourceTree = "<group>"; };
+		6A4D97171D6004820036B711 /* NSString+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Cache.h"; sourceTree = "<group>"; };
+		6A4D97181D6004820036B711 /* NSString+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Cache.m"; sourceTree = "<group>"; };
 		6A5840B71D4E3CB10081ADF3 /* NTSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSquareModel.h; sourceTree = "<group>"; };
 		6A5840B81D4E3CB10081ADF3 /* NTSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSquareModel.m; sourceTree = "<group>"; };
 		6A5FE0EF1D4DC98A00AA8BD8 /* NTInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTInformationTableViewCell.h; sourceTree = "<group>"; };
@@ -463,6 +466,8 @@
 				6AFE0D7A1D22EBDD008045C0 /* UIView+Extension.m */,
 				6A45FE811D2CF5E90005B813 /* UIBarButtonItem+Custom.h */,
 				6A45FE821D2CF5E90005B813 /* UIBarButtonItem+Custom.m */,
+				6A4D97171D6004820036B711 /* NSString+Cache.h */,
+				6A4D97181D6004820036B711 /* NSString+Cache.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -763,6 +768,7 @@
 				6AFE0D7F1D22EC5E008045C0 /* AppDelegate.m in Sources */,
 				6AFE0D7B1D22EBDD008045C0 /* UIButton+Extension.m in Sources */,
 				6A45FE6E1D2CEEDC0005B813 /* NTEssenceTableViewController.m in Sources */,
+				6A4D97191D6004820036B711 /* NSString+Cache.m in Sources */,
 				6A45FE831D2CF5E90005B813 /* UIBarButtonItem+Custom.m in Sources */,
 				6A45FE711D2CEEF80005B813 /* NTLatestTableViewController.m in Sources */,
 				6A9467AE1D4E26FD00C4ADB6 /* NTInformationFooterView.m in Sources */,
